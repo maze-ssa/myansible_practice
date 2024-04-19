@@ -1,6 +1,6 @@
 ---
   - name: Install Standard Tools
-    hosts: uatservers
+    hosts: test
     tasks: 
       - name: Check and install net-tools
         apt:
