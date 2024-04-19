@@ -2,7 +2,7 @@
   - name: Basic Security Hardening
     hosts: test
     become: true
-    become_method: enable
+    become_method: sudo
     become_user: adm-ssa
     tasks: 
       - name: Enable Ubuntu Firewall Service
