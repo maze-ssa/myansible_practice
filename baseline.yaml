@@ -18,7 +18,3 @@
         apt:
           name: nano
           state: latest
-      - name: Check and Install btop
-        apt:
-          name: btop
-          state: latest
