@@ -1,0 +1,11 @@
+---
+  - name: Basic Security Hardening
+    hosts: uatservers
+    tasks: 
+      - name: Allow SSH access from Jump Host
+        community.general.ufw:
+          rule: allow
+          proto: tcp
+          src: 172.16.1.99
+          port: '22'
+          comment: Only allow ssh from Jump Host

@@ -1,0 +1,28 @@
+---
+  - name: Install Standard Tools
+    hosts: uatservers
+    tasks: 
+      - name: Check and install net-tools
+        apt:
+          name: net-tools
+          state: latest
+      - name: Check and install traceroute
+        apt:
+          name: traceroute
+          state: latest
+      - name: Check and Install ifupdown
+        apt:
+          name: ifupdown
+          state: latest
+      - name: Check and Install nano
+        apt:
+          name: nano
+          state: latest
+      - name: Check and Install btop
+        apt:
+          name: btop
+          state: latest
+      - name: Check and Install sshd
+        apt:
+          name: sshd
+          state: latest
