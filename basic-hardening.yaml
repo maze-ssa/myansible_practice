@@ -2,6 +2,8 @@
   - name: Basic Security Hardening
     hosts: test
     become: true
+    become_method: enable
+    become_user: adm-ssa
     tasks: 
       - name: Enable Ubuntu Firewall Service
         community.general.ufw:
