@@ -1,6 +1,6 @@
 ---
   - name: Basic Security Hardening
-    hosts: uatservers
+    hosts: test
     tasks: 
       - name: Allow SSH access from Jump Host
         community.general.ufw:
