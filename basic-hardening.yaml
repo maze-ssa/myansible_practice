@@ -2,6 +2,10 @@
   - name: Basic Security Hardening
     hosts: test
     tasks: 
+      -name: Enable Ubuntu Firewall Service
+        community.general.ufw:
+          state: enabled
+        
       - name: Allow SSH access from Jump Host
         community.general.ufw:
           rule: allow
