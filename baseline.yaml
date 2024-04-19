@@ -22,7 +22,3 @@
         apt:
           name: btop
           state: latest
-      - name: Check and Install sshd
-        apt:
-          name: ssh
-          state: latest
