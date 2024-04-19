@@ -5,6 +5,7 @@
       - name: Enable Ubuntu Firewall Service
         community.general.ufw:
           state: enabled
+        become: true
         
       - name: Allow SSH access from Jump Host
         community.general.ufw:
@@ -13,3 +14,4 @@
           src: 172.16.1.99
           port: '22'
           comment: Only allow ssh from Jump Host
+        become: true
