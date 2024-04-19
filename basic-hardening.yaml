@@ -2,7 +2,7 @@
   - name: Basic Security Hardening
     hosts: test
     tasks: 
-      -name: Enable Ubuntu Firewall Service
+      - name: Enable Ubuntu Firewall Service
         community.general.ufw:
           state: enabled
         
